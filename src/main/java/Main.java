@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Client client = new Client(ConnectionType.CLIENT, SystemVar.clientPort, SystemVar.serverIP);
-        client.sendToClient("hola");
+        Controller controller = new Controller();
+        controller.start();
+
+
+        //Client client = new Client(ConnectionType.CLIENT, SystemVar.dispatcherPort, SystemVar.dispatcherIP);
+
     }
 }
