@@ -1,5 +1,6 @@
 public class Controller {
 
+
     public Controller(){
 
     }
@@ -7,9 +8,6 @@ public class Controller {
 
     public void start(){
         connectToDispatcher();
-
-
-
     }
 
 
@@ -19,6 +17,5 @@ public class Controller {
         client.sendToClient("1" + '\n' + SystemVar.myRealIP + '\n' + SystemVar.myFakeIP  + '\n' + SystemVar.mySendPort);
         Server server = new Server(SystemVar.mySendPort, "localhost");
         server.startServer(true);
-
     }
 }
