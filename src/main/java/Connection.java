@@ -37,18 +37,4 @@ public class Connection {
 
         }
     }
-
-   /* public void createSocket(ConnectionType type, int PORT, String HOST) throws IOException{
-        this.port = port;
-        this.host = host;
-
-        if(type == ConnectionType.SERVER){
-            serverSocket = new ServerSocket(this.port);
-            clientSocket = new Socket();
-        }
-        else{
-            clientSocket = new Socket(host, port);
-        }
-    }
-*/
 }

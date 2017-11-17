@@ -4,8 +4,8 @@ import java.io.IOException;
 public class Client extends Connection {
 
 
-    public Client(ConnectionType type, int port, String host){
-        super(type, port, host);
+    public Client(int port, String host){
+        super(ConnectionType.CLIENT, port, host);
         try {
             this.serverOutStream = new DataOutputStream(clientSocket.getOutputStream());
         }
@@ -20,6 +20,7 @@ public class Client extends Connection {
         System.out.println("El mensaje a enviar es: " +input);
         try {
             serverOutStream.writeUTF(input);
+
             clientSocket.close();
         }
         catch (IOException e){
