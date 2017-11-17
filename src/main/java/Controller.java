@@ -54,27 +54,29 @@ public class Controller {
 
     private String getBestRoute(String destinyIP){
 
-            //Client client = new Client(getDataTable().get(0).getPort(), getDataTable().get(0).getRealIp());
-            //Message message1 = new Message(SystemVar.myFakeIP, getDataTable().get(0).getFakeIp(), 2, destinyIP);
-            //client.sendToClient(message1.toString());
+            Client client = new Client(getDataTable().get(0).getPort(), getDataTable().get(0).getRealIp());
+            Message message1 = new Message(SystemVar.myFakeIP, getDataTable().get(0).getFakeIp(), 2, destinyIP);
+            client.sendToClient(message1.toString());
 
 
             //Client client2 = new Client(getDataTable().get(1).getPort(), getDataTable().get(1).getRealIp());
             //Message message2 = new Message(SystemVar.myFakeIP, getDataTable().get(1).getFakeIp(), 2, destinyIP);
             //client2.sendToClient(message2.toString());
 
-        this.distanceTable.put(dataTable.get(0).getFakeIp(), 2);
-        this.distanceTable.put(dataTable.get(1).getFakeIp(), 5);
+        //this.distanceTable.put(dataTable.get(0).getFakeIp(), 2);
+        //this.distanceTable.put(dataTable.get(1).getFakeIp(), 5);
 
 
-        String ip1 = dataTable.get(0).getFakeIp();
-        String ip2 = dataTable.get(1).getFakeIp();
-        if(distanceTable.get(ip1) > distanceTable.get(ip2)){
-            return ip2;
-        }
-        else{
-            return ip1;
-        }
+        //String ip1 = dataTable.get(0).getFakeIp();
+        //String ip2 = dataTable.get(1).getFakeIp();
+        //if(distanceTable.get(ip1) > distanceTable.get(ip2)){
+        //    return ip2;
+        //}
+        //else{
+        //    return ip1;
+        //
+        // }
+        return dataTable.get(0).getFakeIp();
 
     }
 

@@ -1,8 +1,6 @@
 import javax.swing.*;
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Server extends Connection {
 

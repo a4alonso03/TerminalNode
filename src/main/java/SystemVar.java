@@ -10,6 +10,6 @@ public class SystemVar {
 
 
     static final Integer dispatcherPort = 5000;
-    static final String  dispatcherIP = "10.1.130.193";
+    static final String  dispatcherIP = "10.1.130.30";
 
 }
